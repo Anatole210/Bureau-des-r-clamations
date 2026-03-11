@@ -64,17 +64,17 @@
               <span class="text-sm text-gray-500 dark:text-gray-400 w-32 shrink-0">Nom :</span>
               <span class="text-sm font-medium text-gray-900 dark:text-white">{{ r.nom }}</span>
             </div>
-            <UDivider />
+            <USeparator />
             <div class="flex items-center gap-4">
               <span class="text-sm text-gray-500 dark:text-gray-400 w-32 shrink-0">Prénom :</span>
               <span class="text-sm font-medium text-gray-900 dark:text-white">{{ r.prenom }}</span>
             </div>
-            <UDivider />
+            <USeparator />
             <div class="flex items-center gap-4">
               <span class="text-sm text-gray-500 dark:text-gray-400 w-32 shrink-0">Objet :</span>
               <span class="text-sm font-medium text-gray-900 dark:text-white">{{ r.objet }}</span>
             </div>
-            <UDivider />
+            <USeparator />
             <div class="flex gap-4">
               <span class="text-sm text-gray-500 dark:text-gray-400 w-32 shrink-0 pt-0.5">Réclamation :</span>
               <span class="text-sm text-gray-700 dark:text-gray-300 whitespace-pre-line">{{ r.reclamation }}</span>
@@ -119,7 +119,6 @@
       </template>
     </UModal>
 
-    <UNotifications />
   </UContainer>
 </template>
 

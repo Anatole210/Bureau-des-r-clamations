@@ -3,7 +3,7 @@
     <div class="text-center mb-10">
       <h1 class="text-3xl font-bold text-gray-900 dark:text-white">Bureau des réclamations</h1>
       <p class="text-gray-500 dark:text-gray-400 mt-1">Seconde 3</p>
-      <UDivider class="mt-6" />
+      <USeparator class="mt-6" />
     </div>
 
     <UCard>
@@ -17,15 +17,15 @@
       <UForm :schema="schema" :state="state" class="space-y-5" @submit="onSubmit">
         <div class="grid grid-cols-2 gap-4">
           <UFormField label="Nom" name="nom" required>
-            <UInput v-model="state.nom" placeholder="Dupont" class="w-full" />
+            <UInput v-model="state.nom" placeholder="Nom" class="w-full" />
           </UFormField>
           <UFormField label="Prénom" name="prenom" required>
-            <UInput v-model="state.prenom" placeholder="Jean" class="w-full" />
+            <UInput v-model="state.prenom" placeholder="Prénom" class="w-full" />
           </UFormField>
         </div>
 
         <UFormField label="Objet de la réclamation" name="objet" required>
-          <UInput v-model="state.objet" placeholder="Ex : Bruit en classe, problème avec un camarade..." class="w-full" />
+          <UInput v-model="state.objet" placeholder="Objet" class="w-full" />
         </UFormField>
 
         <UFormField label="Réclamation" name="reclamation" required>
@@ -49,7 +49,6 @@
       </UForm>
     </UCard>
 
-    <UNotifications />
   </UContainer>
 </template>
 
